@@ -13,7 +13,6 @@ void loop() {
 
   digitalWrite(led, LOW);  
   
-  String temp = String(random(60, 80));
   Particle.publish("temp", temp, PRIVATE);
   delay(30000); 
 }
